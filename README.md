@@ -4,7 +4,7 @@ This document explains key TypeScript types â€” `any`, `unknown`, and `never` â€
 
 ---
 
-## 1. Explain the difference between `any`, `unknown`, and `never` types in TypeScript.
+## 3. Explain the difference between `any`, `unknown`, and `never` types in TypeScript.
 
 ### `any`
 - Accepts any type.
@@ -49,13 +49,20 @@ function throwError(message: string): never {
 
 ---
 
-## 2. What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
+## 4. What is the use of enums in TypeScript? Provide an example of a `numeric` and `string` enum.
 
-Enums are used to define a set of named constants. They make your code cleaner and easier to manage.
+Enums in TypeScript are a feature that allows to define a set of named constants. They make code more readable and intent-driven, especially when dealing with a fixed set of related values like roles, directions, or statuses.
+
+Enums can be numeric or string-based, and they help reduce errors caused by hard-coded strings or numbers.
+
+#### Why use Enums?
+- Improve code readability and maintainability.
+- Prevent typos and magic numbers.
+- Provide autocompletion and compile-time checks.
 
 ---
 
-### Numeric Enum
+### Numeric Enum example
 
 ```ts
 enum Status {
@@ -70,7 +77,7 @@ console.log(Status.InProgress); // 2
 
 ---
 
-### String Enum
+### String Enum example:
 
 ```ts
 enum Color {
@@ -83,6 +90,6 @@ console.log(Color.Red);   // "RED"
 console.log(Color.Green); // "GREEN"
 
 
----
+
 
 
