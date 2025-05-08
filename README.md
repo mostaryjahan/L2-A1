@@ -1,6 +1,3 @@
-Here's a clean and well-structured `README.md` file with your TypeScript concepts in code snippets:
-
-````markdown
 # TypeScript Essentials: Types and Enums
 
 This document explains key TypeScript types — `any`, `unknown`, and `never` — along with the usage of `enum` in TypeScript.
@@ -84,7 +81,7 @@ enum Color {
 
 console.log(Color.Red);   // "RED"
 console.log(Color.Green); // "GREEN"
-```
+
 
 ---
 
